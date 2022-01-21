@@ -1,0 +1,8 @@
+// Integrate successfully with the matomo api and be able to pull data automatically
+    //Matomo api seems to work okay just need to figure out how to pull data from requests library
+// Automate the parsing and correction of the data from a csv or tsv into an Excel file
+    // Possibly going to use Pandas for the filtering of the data and to get it into an easy to read format
+    // Correct data coming from Page Titles, Outlinks, and Referring URLs for each website
+// Create a user interface for future users to interact with and pull data when needed
+    // Not sure entirely how this will work, could be a webpage, program, or something else that a user can run
+    // Might have to learn a language besides C++ and python in order to make this look good or take a template
