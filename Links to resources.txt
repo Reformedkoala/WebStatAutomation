@@ -1,3 +1,4 @@
 https://developer.matomo.org/api-reference/reporting-api
 https://developer.matomo.org/guides/reporting-api-clients
 https://www.youtube.com/watch?v=vmEHCJofslg
+https://pypi.org/project/matomo-api/
