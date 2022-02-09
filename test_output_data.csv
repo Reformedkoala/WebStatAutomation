@@ -1,26 +1,26 @@
-Label,Unique Pageviews,Metadata: url,Metadata: segment
-/index,5210,https://library.mines.edu/,exitPageUrl==https%253A%252F%252Flibrary.mines.edu%252F
-services,577,,pageUrl=^https%253A%252F%252Flibrary.mines.edu%252Fservices
-about,483,,pageUrl=^https%253A%252F%252Flibrary.mines.edu%252Fabout
-dux-research,313,,pageUrl=^https%253A%252F%252Flibrary.mines.edu%252Fdux-research
-project,172,,pageUrl=^https%253A%252F%252Flibrary.mines.edu%252Fproject
-ill,169,,pageUrl=^https%253A%252F%252Flibrary.mines.edu%252Fill
-research,138,,pageUrl=^https%253A%252F%252Flibrary.mines.edu%252Fresearch
-help,114,,pageUrl=^https%253A%252F%252Flibrary.mines.edu%252Fhelp
-bookandbrew,98,,pageUrl=^https%253A%252F%252Flibrary.mines.edu%252Fbookandbrew
-email-help,60,,pageUrl=^https%253A%252F%252Flibrary.mines.edu%252Femail-help
-events,48,,pageUrl=^https%253A%252F%252Flibrary.mines.edu%252Fevents
-suggest-a-purchase,20,,pageUrl=^https%253A%252F%252Flibrary.mines.edu%252Fsuggest-a-purchase
-scholars-hub,13,,pageUrl=^https%253A%252F%252Flibrary.mines.edu%252Fscholars-hub
-chat,9,,pageUrl=^https%253A%252F%252Flibrary.mines.edu%252Fchat
-instructionlibrarians,9,,pageUrl=^https%253A%252F%252Flibrary.mines.edu%252Finstructionlibrarians
-instructionservices,8,,pageUrl=^https%253A%252F%252Flibrary.mines.edu%252Finstructionservices
-onlineinstruction,7,,pageUrl=^https%253A%252F%252Flibrary.mines.edu%252Fonlineinstruction
-give,6,,pageUrl=^https%253A%252F%252Flibrary.mines.edu%252Fgive
-project_category,5,,pageUrl=^https%253A%252F%252Flibrary.mines.edu%252Fproject_category
-reserve-requests,5,,pageUrl=^https%253A%252F%252Flibrary.mines.edu%252Freserve-requests
-feedback,4,,pageUrl=^https%253A%252F%252Flibrary.mines.edu%252Ffeedback
-oer,3,,pageUrl=^https%253A%252F%252Flibrary.mines.edu%252Foer
-/LIB-Research-Case-Studies,2,https://library.mines.edu/LIB-Research-Case-Studies,exitPageUrl==https%253A%252F%252Flibrary.mines.edu%252FLIB-Research-Case-Studies
-/MMJ,2,https://library.mines.edu/MMJ,exitPageUrl==https%253A%252F%252Flibrary.mines.edu%252FMMJ
-/_,2,https://library.mines.edu/_,exitPageUrl==https%253A%252F%252Flibrary.mines.edu%252F_,
+ Label,Unique Pageviews,Bounce Rate,Exit rate,
+ Library Home - Arthur Lakes Library,5210,63%,89%,
+ Study and Meeting Rooms - Arthur Lakes Library,434,19%,91%,
+ Usability Testing - Sign Up - Arthur Lakes Library,313,86%,100%,
+ Can't Find It? - Arthur Lakes Library,169,68%,63%,
+ Faculty & Staff - Arthur Lakes Library,131,55%,60%,
+ Help - Arthur Lakes Library,114,65%,36%,
+ Research - Arthur Lakes Library,113,13%,60%,
+ Library Directory - Arthur Lakes Library,106,81%,73%,
+ Book and Brew Coffee Shop - Arthur Lakes Library,98,31%,94%,
+ Floor Plans - Arthur Lakes Library,84,77%,82%,
+ Ask a Librarian - Arthur Lakes Library,60,86%,60%,
+ Library Events - Arthur Lakes Library,48,77%,67%,
+ Borrow and Renew - Arthur Lakes Library,33,25%,48%,
+ Services - Arthur Lakes Library,33,33%,36%,
+" Print, Copy, Scan - Arthur Lakes Library",32,59%,91%,
+ Seth Vuletich - Arthur Lakes Library,25,33%,28%,
+ Computers & Labs - Arthur Lakes Library,22,88%,77%,
+ About the Library - Arthur Lakes Library,21,38%,43%,
+ Gyasi Evans - Arthur Lakes Library,21,89%,67%,
+ Carol Smith - Arthur Lakes Library,20,88%,50%,
+ Suggest a Purchase - Arthur Lakes Library,20,100%,85%,
+ Brianna Buljung - Arthur Lakes Library,18,100%,56%,
+ COVID-19 Updates - Arthur Lakes Library,18,50%,44%,
+ Resources for Alumni and Members - Arthur Lakes Library,17,64%,76%,
+ Course Readings - Arthur Lakes Library,15,50%,40%,
