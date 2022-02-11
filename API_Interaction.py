@@ -22,19 +22,19 @@ def page_titles(user_input, file_out):
 
     # The magic of web requests and for loops to store data into a csv file
     response = api.Actions().getPageTitles(pars_page_titles)
-    with open(file_out, 'w') as test_output:
+    with open(file_out, 'a') as output:
         response = response.text.replace('\n', ',')
-        test_output.write(' ')
+        output.write(' ')
         for i in response.split(','):
             if "pageTitle" == i[0:9]:
-                test_output.write('\n')
+                output.write('\n')
                 continue
             elif "Metadata" == i[0:8]:
-                test_output.write('\n')
+                output.write('\n')
                 continue
             else:
-                test_output.write(i)
-                test_output.write(',')
+                output.write(i)
+                output.write(',')
 
 # Outlinks parameters
 def outlinks(user_input, file_out):
@@ -44,7 +44,12 @@ def outlinks(user_input, file_out):
            | ma.filter_limit(25)
 
     response = api.Actions().getOutlinks(pars_outlinks)
-
+    with open(file_out, 'a') as output:
+        response = response.text
+        response = response.split(',')
+        for i in response:
+            output.write(i)
+            output.write(',')
 
 #Referring URLs parameters
 def referring_urls(user_input, file_out):
@@ -52,5 +57,17 @@ def referring_urls(user_input, file_out):
            | ma.idSite.one_or_more(user_input) | ma.date.lastMonth | ma.period.month \
            | ma.showColumns(ma.col.nb_visits) \
            | ma.filter_limit(25)
-
     response = api.Referrers().getWebsites(pars_referring_urls)
+    with open(file_out, 'a') as output:
+        response = response.text.replace('\n', ',')
+        output.write('\n')
+        for i in response.split(','):
+            if "referrerName" == i[0:12]:
+                output.write('\n')
+                continue
+            elif "Metadata" == i[0:8]:
+                output.write('\n')
+                continue
+            else:
+                output.write(i)
+                output.write(',')

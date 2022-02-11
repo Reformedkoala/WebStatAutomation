@@ -15,11 +15,16 @@ while user_site == 0:
         print('Please enter a valid input')
         print('++++++++++++++++++++++++++')
         user_site = 0
-check = 0
-while check == 0:
-    print('Please enter the full directory path below or choose the default directory.')
-    print('1) Default')
-    default = r"Y:\LB\SharedSpace\Systems\WebStats\output.csv"
-    isFile = os.path.exists(default)
-    print(isFile)
-    file_out = input('Enter Here:')
+default = "Y:\LB\SharedSpace\Systems\WebStats\\"
+print('All files will be save to the Y drive with a path of', default)
+print('You must add a name for the file')
+isFile = os.path.isdir(default)
+if isFile != True :
+    print('Error finding base directory for file please ensure that the required directory exists.')
+    quit()
+file_out = input('Choose the name for the file here with no extension: ')
+file_out = default + file_out + '.csv'
+print('The file you are saving to is', file_out)
+page_titles(user_site, file_out)
+outlinks(user_site, file_out)
+referring_urls(user_site, file_out)
