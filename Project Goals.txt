@@ -6,7 +6,8 @@
     //allow for user choice on which site
     //Correctly output into excel/csv file depending on site
 // Automate the parsing and correction of the data from a csv or tsv into an Excel file
-    // Correct data coming from Page Titles, Outlinks, and Referring URLs for each website -Done (I think)
+    // Correct data coming from Page Titles, Outlinks, and Referring URLs for each website -Done (Except for Primo)
+    // Fancify the data with an excel library in a seperate python file compared to data pulling
 // Create a user interface for future users to interact with and pull data when needed
     // Not sure entirely how this will work, could be a webpage, program, or something else that a user can run
     // Might have to learn a language besides C++ and python in order to make this look good or take a template
