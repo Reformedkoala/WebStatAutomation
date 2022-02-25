@@ -25,6 +25,8 @@ def page_titles(user_input, file_out):
     with open(file_out, 'a') as output:
         response = response.text.replace('\n', ',')
         output.write(' ')
+        output.write('Pages')
+        output.write('\n')
         for i in response.split(','):
             if "pageTitle" == i[0:9]:
                 output.write('\n')
@@ -45,6 +47,9 @@ def outlinks(user_input, file_out):
 
     response = api.Actions().getOutlinks(pars_outlinks)
     with open(file_out, 'a') as output:
+        output.write('\n')
+        output.write('Outlinks')
+        output.write('\n')
         response = response.text
         response = response.split(',')
         for i in response:
@@ -60,6 +65,9 @@ def referring_urls(user_input, file_out):
     response = api.Referrers().getWebsites(pars_referring_urls)
     with open(file_out, 'a') as output:
         response = response.text.replace('\n', ',')
+        output.write('\n')
+        output.write('\n')
+        output.write('Referring URLs')
         output.write('\n')
         for i in response.split(','):
             if "referrerName" == i[0:12]:
