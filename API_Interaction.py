@@ -7,7 +7,6 @@ TOKEN = '8510379384a55b02e47fe2c52665e13b'
 # actual api variable we will reference to pull data
 api = ma.MatomoApi(URL, TOKEN)
 
-
 # Site ids- LIBWIZARD = 7, LIBANSWERS = 6, LIBCAL = 5, LIBGUIDES = 4, PRIMO = 3 (Included but not yet), Don't have
 # access = 2, LIBRARY.MINES.EDU = 1
 
@@ -44,7 +43,6 @@ def outlinks(user_input, file_out):
            | ma.idSite.one_or_more(user_input) | ma.date.lastMonth | ma.period.month \
            | ma.hideColumns(ma.col.sum_time_spent) \
            | ma.filter_limit(25)
-
     response = api.Actions().getOutlinks(pars_outlinks)
     with open(file_out, 'a') as output:
         output.write('\n')

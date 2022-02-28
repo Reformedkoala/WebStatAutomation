@@ -1,4 +1,5 @@
- Label,Unique Pageviews,Bounce Rate,Exit rate,
+Pages
+Label,Unique Pageviews,Bounce Rate,Exit rate,
  Library Home - Arthur Lakes Library,5210,63%,89%,
  Study and Meeting Rooms - Arthur Lakes Library,434,19%,91%,
  Usability Testing - Sign Up - Arthur Lakes Library,313,86%,100%,
@@ -24,6 +25,8 @@
  COVID-19 Updates - Arthur Lakes Library,18,50%,44%,
  Resources for Alumni and Members - Arthur Lakes Library,17,64%,76%,
  Course Readings - Arthur Lakes Library,15,50%,40%,
+
+Outlinks
 Label,Unique Clicks,Clicks
 libcal.mines.edu,693,790
 libguides.mines.edu,585,688
@@ -50,6 +53,8 @@ www.facebook.com,3,3
 www.linkedin.com,3,3
 www.minesalumni.com,3,4
 www.youtube.com,2,2,
+
+Referring URLs
 Label,Visits,
 mines.primo.exlibrisgroup.com,228,
 libguides.mines.edu,191,
