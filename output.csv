@@ -1,83 +1,62 @@
-Pages
+ Pages
 Label,Unique Pageviews,Bounce Rate,Exit rate,
- Library Home - Arthur Lakes Library,5210,63%,89%,
- Study and Meeting Rooms - Arthur Lakes Library,434,19%,91%,
- Usability Testing - Sign Up - Arthur Lakes Library,313,86%,100%,
- Can't Find It? - Arthur Lakes Library,169,68%,63%,
- Faculty & Staff - Arthur Lakes Library,131,55%,60%,
- Help - Arthur Lakes Library,114,65%,36%,
- Research - Arthur Lakes Library,113,13%,60%,
- Library Directory - Arthur Lakes Library,106,81%,73%,
- Book and Brew Coffee Shop - Arthur Lakes Library,98,31%,94%,
- Floor Plans - Arthur Lakes Library,84,77%,82%,
- Ask a Librarian - Arthur Lakes Library,60,86%,60%,
- Library Events - Arthur Lakes Library,48,77%,67%,
- Borrow and Renew - Arthur Lakes Library,33,25%,48%,
- Services - Arthur Lakes Library,33,33%,36%,
-" Print, Copy, Scan - Arthur Lakes Library",32,59%,91%,
- Seth Vuletich - Arthur Lakes Library,25,33%,28%,
- Computers & Labs - Arthur Lakes Library,22,88%,77%,
- About the Library - Arthur Lakes Library,21,38%,43%,
- Gyasi Evans - Arthur Lakes Library,21,89%,67%,
- Carol Smith - Arthur Lakes Library,20,88%,50%,
- Suggest a Purchase - Arthur Lakes Library,20,100%,85%,
- Brianna Buljung - Arthur Lakes Library,18,100%,56%,
- COVID-19 Updates - Arthur Lakes Library,18,50%,44%,
- Resources for Alumni and Members - Arthur Lakes Library,17,64%,76%,
- Course Readings - Arthur Lakes Library,15,50%,40%,
+ Space Availability - Study Rooms - Library Calendars - Arthur Lakes Library,758,30%,40%,
+ Booking Details - Library Calendars - Arthur Lakes Library,583,85%,82%,
+ Check In - Library Calendars - Arthur Lakes Library,471,69%,79%,
+ Modern Researcher 501: Writing your first paper *ON ZOOM* - Library Calendars - Arthur Lakes Library,454,70%,95%,
+ Opening Hours - Library Calendars - Arthur Lakes Library,211,68%,87%,
+ Gadgets to Go - Library Calendars - Arthur Lakes Library,158,36%,50%,
+" Golden Town & Gown - Andrew Terrill's ""The Earth Beneath My Feet” - Library Calendars - Arthur Lakes Library",124,83%,94%,
+ Community Conversations - W-MCA Handmaid's Tale - Library Calendars - Arthur Lakes Library,104,90%,94%,
+ Modern Researcher 501: Introduction to LaTeX with Overleaf *ON ZOOM* - Library Calendars - Arthur Lakes Library,76,75%,74%,
+ Cancel Booking - Library Calendars - Arthur Lakes Library,74,74%,70%,
+ Space Availability - Studio - Library Calendars - Arthur Lakes Library,74,34%,49%,
+ Book a Librarian Online - Library Calendars - Arthur Lakes Library,73,66%,81%,
+ Events @ Arthur Lakes Library - Library Calendars - Arthur Lakes Library,73,37%,71%,
+ Library Calendars - Arthur Lakes Library,71,55%,49%,
+ Modern Researcher 501: Effective negotiation strategies - Library Calendars - Arthur Lakes Library,62,85%,85%,
+ Modern Researcher 501: Auto-magic citations and bibliographies: Introduction to citation management with Zotero *ON ZOOM* - Library Calendars - Arthur Lakes Library,59,59%,80%,
+ Confirmed Bookings - Library Calendars - Arthur Lakes Library,44,70%,50%,
+ Book a Librarian - Library Calendars - Arthur Lakes Library,35,25%,43%,
+ Space Availability - Conference Room - Library Calendars - Arthur Lakes Library,35,17%,37%,
+ Book a Librarian In Person - Library Calendars - Arthur Lakes Library,34,44%,68%,
+ Modern Researcher 501: Getting started with GitHub - Library Calendars - Arthur Lakes Library,34,67%,79%,
+ Space Availability - 120B-M - Library Calendars - Arthur Lakes Library,34,67%,32%,
+ Space Availability - 220C-M - Library Calendars - Arthur Lakes Library,30,100%,40%,
+ Space Availability - 220A-M - Library Calendars - Arthur Lakes Library,28,100%,18%,
+ Modern Researcher 501: Getting started with GitHub *ON ZOOM* - Library Calendars - Arthur Lakes Library,27,85%,74%,
 
 Outlinks
 Label,Unique Clicks,Clicks
-libcal.mines.edu,693,790
-libguides.mines.edu,585,688
-mines.primo.exlibrisgroup.com,324,355
-www.mines.edu,118,134
-libanswers.mines.edu,27,31
-illiad.mines.edu,26,32
-encore.coalliance.org,22,23
-mines.libcal.com,19,21
-trailhead.mines.edu,18,18
-elearning.mines.edu,10,10
-its.mines.edu,10,12
-giving.mines.edu,9,11
-mountainscholar.org,9,10
-browzine.com,8,8
-calendar.mines.edu,5,5
-mines.bncollege.com,5,5
-tour.mines.edu,5,5
-mines.edu,4,4
-careers.mines.edu,3,3
-magazine.mines.edu,3,3
-online.mines.edu,3,4
-www.facebook.com,3,3
-www.linkedin.com,3,3
-www.minesalumni.com,3,4
-www.youtube.com,2,2,
+library.mines.edu,94,105
+www.mines.edu,32,41
+mines.libcal.com,21,26
+libguides.mines.edu,13,13
+mines.libapps.com,11,11
+www.google.com,4,4
+docs.google.com,1,1
+inside.mines.edu,1,1
+libauth.com,1,1
+mines.primo.exlibrisgroup.com,1,1
+mines.zoom.us,1,1
+onlinemanual.nikonimglib.com,1,1
+www.amazon.com,1,1,
 
 Referring URLs
 Label,Visits,
-mines.primo.exlibrisgroup.com,228,
-libguides.mines.edu,191,
-www.mines.edu,66,
-libcal.mines.edu,63,
-elearning.mines.edu,41,
-trailhead.mines.edu,19,
-calendar.mines.edu,12,
-mines-prod.modolabs.net,10,
-apply.mines.edu,7,
-ebookcentral.proquest.com,6,
-illiad.mines.edu,6,
-online.mines.edu,6,
-tour.mines.edu,5,
-www.sciencedirect.com,5,
-research.mines.edu,4,
-onlinelibrary.wiley.com,3,
-people.mines.edu,3,
+library.mines.edu,934,
+idp.mines.edu,145,
+libguides.mines.edu,51,
+api3.libcal.com,12,
+trailhead.mines.edu,5,
+www.mines.edu,4,
+mines0.sharepoint.com,3,
 webapps.mines.edu,3,
-chemistry.mines.edu,2,
-coorstek.sharepoint.com,2,
-cwp.mines.edu,2,
-en.wikipedia.org,2,
-geophysics.mines.edu,2,
-gis.mines.edu,2,
-helpcenter.mines.edu,2,
+www.unco.edu,3,
+mail.google.com,2,
+com.google.android.gm,1,
+goldentoday.com,1,
+graduateschool.colostate.edu,1,
+innovation.mines.edu,1,
+mines.edu,1,
+mines.libapps.com,1,

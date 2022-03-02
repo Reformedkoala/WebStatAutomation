@@ -1,4 +1,5 @@
 from API_Interaction import *
+from ExcelBeautifier import *
 import os
 user_site = 0
 while user_site == 0:
@@ -28,3 +29,12 @@ print('The file you are saving to is', file_out)
 page_titles(user_site, file_out)
 outlinks(user_site, file_out)
 referring_urls(user_site, file_out)
+convert_csv_xlsx(file_out)
+delete_file = file_out
+file_out = file_out[:-4]
+file_out += '.xlsx'
+os.remove(delete_file)
+xfile = openpyxl.load_workbook(file_out)
+sheet = xfile['Sheet1'] # make this a variable for integration with current data
+space_columns(sheet)
+xfile.save(file_out)
