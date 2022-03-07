@@ -13,6 +13,7 @@ api = ma.MatomoApi(URL, TOKEN)
 # parameters changes based on which data we want
 # Page titles parameters
 def page_titles(user_input, file_out):
+    # Creates a variable of all the parameters we want our request to contain
     pars_page_titles = ma.format.csv | ma.language.en | ma.translateColumnNames() \
            | ma.idSite.one_or_more(user_input) | ma.date.lastMonth | ma.period.month \
            | ma.showColumns(ma.col.nb_visits, ma.col.nb_uniq_visitors, ma.col.nb_pageviews, ma.col.bounce_rate,
@@ -22,10 +23,12 @@ def page_titles(user_input, file_out):
     # The magic of web requests and for loops to store data into a csv file
     response = api.Actions().getPageTitles(pars_page_titles)
     with open(file_out, 'a') as output:
+        # Opening the csv file to append to to ensure we don't overwrite existing data
         response = response.text.replace('\n', ',')
         output.write(' ')
         output.write('Pages')
         output.write('\n')
+        # Looping through the data and cleaning out anything we don't need
         for i in response.split(','):
             if "pageTitle" == i[0:9]:
                 output.write('\n')
@@ -39,12 +42,15 @@ def page_titles(user_input, file_out):
 
 # Outlinks parameters
 def outlinks(user_input, file_out):
+    # Creates a variable of all the parameters we want our request to contain
     pars_outlinks = ma.format.csv | ma.language.en | ma.translateColumnNames() \
            | ma.idSite.one_or_more(user_input) | ma.date.lastMonth | ma.period.month \
            | ma.hideColumns(ma.col.sum_time_spent) \
            | ma.filter_limit(25)
+    # Uses response again to pull individual data
     response = api.Actions().getOutlinks(pars_outlinks)
     with open(file_out, 'a') as output:
+        # Loops through the data and cleans out any unnecessary data
         output.write('\n')
         output.write('Outlinks')
         output.write('\n')
@@ -56,12 +62,15 @@ def outlinks(user_input, file_out):
 
 #Referring URLs parameters
 def referring_urls(user_input, file_out):
+    # Creates a variable of all the parameters we want our request to contain
     pars_referring_urls = ma.format.csv | ma.language.en | ma.translateColumnNames() \
            | ma.idSite.one_or_more(user_input) | ma.date.lastMonth | ma.period.month \
            | ma.showColumns(ma.col.nb_visits) \
            | ma.filter_limit(25)
+    # Uses response for a third time to call the referring urls
     response = api.Referrers().getWebsites(pars_referring_urls)
     with open(file_out, 'a') as output:
+        # Loops through the data and completely cleans it of what we don't need
         response = response.text.replace('\n', ',')
         output.write('\n')
         output.write('\n')

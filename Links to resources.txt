@@ -1,6 +1,9 @@
+Links for api interaction and cleaning of data as well as random tangents I explored
 https://developer.matomo.org/api-reference/reporting-api
 https://developer.matomo.org/guides/reporting-api-clients
 https://www.youtube.com/watch?v=vmEHCJofslg
 https://pypi.org/project/matomo-api/
 https://www.geeksforgeeks.org/writing-excel-sheet-using-python/ (for future excel output use)
 https://www.geeksforgeeks.org/create-a-gui-to-convert-csv-file-into-excel-file-using-python/
+
+Links for graphical interface creation
