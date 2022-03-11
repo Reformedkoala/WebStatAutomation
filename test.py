@@ -78,6 +78,7 @@ class Ui_MainWindow(object):
         elif choice == 7:
             site = 'libwizard_detail'
         default = "Y:\LB\SharedSpace\Systems\WebStats\\"
+        """
         output = default + site +'.csv'
         API_Interaction.page_titles(choice, output)
         # Calling outlinks function to get the data for outlinks(More decsription in API_interaction)
@@ -101,6 +102,7 @@ class Ui_MainWindow(object):
         # Spaces all columns within the excel file and saves the file and sheet
         ExcelBeautifier.space_columns(sheet)
         xfile.save(output)
+        """
 
 
 
