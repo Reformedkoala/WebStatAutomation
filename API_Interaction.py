@@ -16,12 +16,13 @@ def page_titles(user_input, file_out):
     # Creates a variable of all the parameters we want our request to contain
     pars_page_titles = ma.format.csv | ma.language.en | ma.translateColumnNames() \
            | ma.idSite.one_or_more(user_input) | ma.date.lastMonth | ma.period.month \
-           | ma.showColumns(ma.col.nb_visits, ma.col.nb_uniq_visitors, ma.col.nb_pageviews, ma.col.bounce_rate,
+           | ma.showColumns(ma.col.nb_uniq_pageviews, ma.col.nb_pageviews, ma.col.bounce_rate,
                             ma.col.exit_rate) \
            | ma.filter_limit(25)
 
     # The magic of web requests and for loops to store data into a csv file
     response = api.Actions().getPageTitles(pars_page_titles)
+    print(response.text)
     with open(file_out, 'a') as output:
         # Opening the csv file to append to to ensure we don't overwrite existing data
         response = response.text.replace('\n', ',')

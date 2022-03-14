@@ -78,7 +78,7 @@ class Ui_MainWindow(object):
         elif choice == 7:
             site = 'libwizard_detail'
         default = "Y:\LB\SharedSpace\Systems\WebStats\\"
-        """
+
         output = default + site +'.csv'
         API_Interaction.page_titles(choice, output)
         # Calling outlinks function to get the data for outlinks(More decsription in API_interaction)
@@ -86,26 +86,18 @@ class Ui_MainWindow(object):
         # Calling the refferring_urls function to get the data for referring urls(More decsription in API_interaction)
         API_Interaction.referring_urls(choice, output)
         # Calling the convert csv to excel file to ensure we are now making an excel file to edit later
-        ExcelBeautifier.convert_csv_xlsx(output)
-        # Converts and copies our csv filename
-        delete_file = output
-        output = output[:-4]
-        output += '.xlsx'
-        # Deletes the csv file to ensure we don't have two of the same file
-        os.remove(delete_file)
-        # Creates a workbook from the excel file in order to edit and clean up
-        xfile = openpyxl.load_workbook(output)
         today = date.today()
         d1 = today.strftime("%B %Y")
-        d1 = d1[0:3], d1[d1.find(" ") + 1:]
-        sheet = xfile[d1] # TODO Fix this because currently no sheet exists and I have to add it
-        # Spaces all columns within the excel file and saves the file and sheet
+        d1 = d1[0:3] + " " + d1[d1.find(" ") + 1:]
+        output_excel = output[:-4]
+        output_excel += '.xlsx'
+        xfile = openpyxl.load_workbook(output_excel)
+        xfile.create_sheet(d1)
+        sheet = xfile[d1]
+        ExcelBeautifier.convert_csv_xlsx(output, sheet)
         ExcelBeautifier.space_columns(sheet)
-        xfile.save(output)
-        """
-
-
-
+        os.remove(output)
+        xfile.save(output_excel)
 
 
 import Designerpictures_rc
