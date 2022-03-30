@@ -31,6 +31,7 @@ class Ui_MainWindow(object):
         self.DropDown.addItem("")
         self.DropDown.addItem("")
         self.DropDown.addItem("")
+        self.DropDown.addItem("")
         self.TitleInfo = QtWidgets.QLabel(self.centralwidget)
         self.TitleInfo.setGeometry(QtCore.QRect(30, 40, 731, 111))
         self.TitleInfo.setTextFormat(QtCore.Qt.RichText)
@@ -56,49 +57,78 @@ class Ui_MainWindow(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.RunButton.setText(_translate("MainWindow", "Run"))
-        self.DropDown.setItemText(0, _translate("MainWindow", "1. Library.Mines.edu"))
-        self.DropDown.setItemText(1, _translate("MainWindow", "4. LibGuides"))
-        self.DropDown.setItemText(2, _translate("MainWindow", "5. Libcal"))
-        self.DropDown.setItemText(3, _translate("MainWindow", "6. Libanswers"))
-        self.DropDown.setItemText(4, _translate("MainWindow", "7. Libwaizard"))
+        self.DropDown.setItemText(0, _translate("MainWindow", "1. ALL"))
+        self.DropDown.setItemText(1, _translate("MainWindow", "2. Library.Mines.edu"))
+        self.DropDown.setItemText(2, _translate("MainWindow", "4. LibGuides"))
+        self.DropDown.setItemText(3, _translate("MainWindow", "5. Libcal"))
+        self.DropDown.setItemText(4, _translate("MainWindow", "6. Libanswers"))
+        self.DropDown.setItemText(5, _translate("MainWindow", "7. Libwaizard"))
         self.TitleInfo.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:16pt;\">Welcome to the web stats automation software.  Select the site you would like to pull statistics for and press Run. Software created by: Garrett Thompson</span></p></body></html>"))
 
 
     def pressed(self):
+        site_list = ['main-website_detail', 'libguides_detail', 'libcal_detail', 'libanswers_detail', 'libwizard_detail']
+        choice_list = [1, 4, 5, 6, 7]
         choice = self.DropDown.currentText()
         choice = int(choice[:1])
-        if choice == 1:
-            site = 'main-website_detail'
-        elif choice == 4:
-            site = 'libguides_detail'
-        elif choice == 5:
-            site = 'libcal_detail'
-        elif choice == 6:
-            site = 'libanswers_detail'
-        elif choice == 7:
-            site = 'libwizard_detail'
-        default = "Y:\LB\SharedSpace\Systems\WebStats\\"
+        if choice != 1:
+            if choice == 2:
+                choice = 1
+                site = site_list[0]
+            elif choice == 4:
+                site = site_list[1]
+            elif choice == 5:
+                site = site_list[2]
+            elif choice == 6:
+                site = site_list[3]
+            elif choice == 7:
+                site = site_list[4]
+            default = "Y:\LB\SharedSpace\Systems\WebStats\\"
 
-        output = default + site +'.csv'
-        API_Interaction.page_titles(choice, output)
-        # Calling outlinks function to get the data for outlinks(More decsription in API_interaction)
-        API_Interaction.outlinks(choice, output)
-        # Calling the refferring_urls function to get the data for referring urls(More decsription in API_interaction)
-        API_Interaction.referring_urls(choice, output)
-        # Calling the convert csv to excel file to ensure we are now making an excel file to edit later
+            output = default + site +'.csv'
+            API_Interaction.page_titles(choice, output)
+            # Calling outlinks function to get the data for outlinks(More decsription in API_interaction)
+            API_Interaction.outlinks(choice, output)
+            # Calling the refferring_urls function to get the data for referring urls(More decsription in API_interaction)
+            API_Interaction.referring_urls(choice, output)
+            # Calling the convert csv to excel file to ensure we are now making an excel file to edit later
 
-        today = date.today()
-        d1 = today.strftime("%B %Y")
-        d1 = d1[0:3] + " " + d1[d1.find(" ") + 1:]
-        output_excel = output[:-4]
-        output_excel += '.xlsx'
-        xfile = openpyxl.load_workbook(output_excel)
-        xfile.create_sheet(d1)
-        sheet = xfile[d1]
-        ExcelBeautifier.convert_csv_xlsx(output, sheet)
-        ExcelBeautifier.space_columns(sheet)
-        os.remove(output)
-        xfile.save(output_excel)
+            today = date.today()
+            d1 = today.strftime("%B %Y")
+            d1 = d1[0:3] + " " + d1[d1.find(" ") + 1:]
+            output_excel = output[:-4]
+            output_excel += '.xlsx'
+            xfile = openpyxl.load_workbook(output_excel)
+            xfile.create_sheet(d1)
+            sheet = xfile[d1]
+            ExcelBeautifier.convert_csv_xlsx(output, sheet)
+            ExcelBeautifier.space_columns(sheet)
+            os.remove(output)
+            xfile.save(output_excel)
+        else:
+            for i in range(0, len(site_list)):
+                site = site_list[i]
+                choice = choice_list[i]
+                default = "Y:\LB\SharedSpace\Systems\WebStats\\"
+                output = default + site + '.csv'
+                API_Interaction.page_titles(choice, output)
+                # Calling outlinks function to get the data for outlinks(More decsription in API_interaction)
+                API_Interaction.outlinks(choice, output)
+                # Calling the refferring_urls function to get the data for referring urls(More decsription in API_interaction)
+                API_Interaction.referring_urls(choice, output)
+                # Calling the convert csv to excel file to ensure we are now making an excel file to edit later
+                today = date.today()
+                d1 = today.strftime("%B %Y")
+                d1 = d1[0:3] + " " + d1[d1.find(" ") + 1:]
+                output_excel = output[:-4]
+                output_excel += '.xlsx'
+                xfile = openpyxl.load_workbook(output_excel)
+                xfile.create_sheet(d1)
+                sheet = xfile[d1]
+                ExcelBeautifier.convert_csv_xlsx(output, sheet)
+                ExcelBeautifier.space_columns(sheet)
+                os.remove(output)
+                xfile.save(output_excel)
 
 
 
