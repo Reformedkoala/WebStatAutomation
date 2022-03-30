@@ -86,6 +86,7 @@ class Ui_MainWindow(object):
         # Calling the refferring_urls function to get the data for referring urls(More decsription in API_interaction)
         API_Interaction.referring_urls(choice, output)
         # Calling the convert csv to excel file to ensure we are now making an excel file to edit later
+
         today = date.today()
         d1 = today.strftime("%B %Y")
         d1 = d1[0:3] + " " + d1[d1.find(" ") + 1:]
@@ -98,6 +99,7 @@ class Ui_MainWindow(object):
         ExcelBeautifier.space_columns(sheet)
         os.remove(output)
         xfile.save(output_excel)
+
 
 
 import Designerpictures_rc
