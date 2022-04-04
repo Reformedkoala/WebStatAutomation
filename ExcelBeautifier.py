@@ -1,8 +1,5 @@
-from openpyxl import load_workbook
-import os
-import glob
 import csv
-from xlsxwriter.workbook import Workbook
+
 
 # This function converts the csv data that we have cleaned into something that we can use a bit
 # easier and make it look like the data that we already have

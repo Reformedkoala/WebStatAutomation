@@ -1,3 +1,9 @@
+# Along the development process I created a CLI in order to interact with the code as an early form of interface.  This
+# later changed into the GUI now being used.
+
+
+# IMPORTANT THIS IS NOT FOR IMPLEMENTATION PURPOSES AND WAS ONLY FOR DEVELOPMENT
+"""
 from API_Interaction import *
 from ExcelBeautifier import *
 import openpyxl
@@ -60,3 +66,4 @@ sheet = xfile[
 # Spaces all columns within the excel file and saves the file and sheet
 space_columns(sheet)
 xfile.save(file_out)
+"""
