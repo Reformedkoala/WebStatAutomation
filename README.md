@@ -1,4 +1,4 @@
-# WebStatAutomation(WIP)
+# WebStatAutomation(V1.0)
 Automation of some of the Library Website Statistics for Colorado School of Mines through the Matomo API
 
 Author: Garrett Thompson
