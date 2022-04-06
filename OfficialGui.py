@@ -99,7 +99,7 @@ class Ui_MainWindow(object):
             elif choice == 7:
                 site = site_list[4]
             # Controls the main path that the webstats are stored in
-            default = "Y:\LB\SharedSpace\Systems\WebStats\\"
+            default = ""
             output = default + site + '.csv'
             API_Interaction.page_titles(choice, output)
             # Calling outlinks function to get the data for outlinks(More decsription in API_interaction)
@@ -129,7 +129,7 @@ class Ui_MainWindow(object):
             for i in range(0, len(site_list)):
                 site = site_list[i]
                 choice = choice_list[i]
-                default = "Y:\LB\SharedSpace\Systems\WebStats\\"
+                default = ""
                 output = default + site + '.csv'
                 API_Interaction.page_titles(choice, output)
                 # Calling outlinks function to get the data for outlinks(More decsription in API_interaction)

@@ -31,7 +31,7 @@ while user_site == 0:
         print('++++++++++++++++++++++++++')
         user_site = 0
 # Setting up our file path that the user chooses with a default directory of the webstats storage
-default = "Y:\LB\SharedSpace\Systems\WebStats\\"
+default = ""
 print('All files will be save to the Y drive with a path of', default)
 print('You must add a name for the file')
 isFile = os.path.isdir(default)

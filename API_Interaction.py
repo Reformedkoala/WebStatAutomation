@@ -1,8 +1,8 @@
 import matomo_api as ma
 
 # Variables for the api url and api token(do not share)
-URL = 'https://mineslibrary.matomo.cloud'
-TOKEN = '8510379384a55b02e47fe2c52665e13b'
+URL = ''
+TOKEN = ''
 
 # actual api variable we will reference to pull data
 api = ma.MatomoApi(URL, TOKEN)
