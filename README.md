@@ -1,4 +1,5 @@
 # WebStatAutomation(V1.0)
+FOR SECURITY REASONS THE API KEY, WEBSITE URL, AND FILE PATH HAVE BEEN REMOVED THIS MEANS THAT THE PROGRAM MAY NOT RUN PROPERLY WITHOUT ADDING THESE IN
 Automation of some of the Library Website Statistics for Colorado School of Mines through the Matomo API
 
 Author: Garrett Thompson
